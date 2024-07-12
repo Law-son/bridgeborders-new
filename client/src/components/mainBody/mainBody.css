@@ -1,0 +1,32 @@
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scroll-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scroll-content {
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .scroll-content img {
+    margin-right: 20px;
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 1024px) {
+    .scroll-content {
+      animation: scroll 20s linear infinite;
+    }
+  }
+  

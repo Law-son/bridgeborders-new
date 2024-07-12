@@ -1,0 +1,9 @@
+/* styles.css */
+.fixed {
+    z-index: 1000;
+  }
+  
+  .transition-transform {
+    transition: transform 0.3s ease-in-out;
+  }
+  
